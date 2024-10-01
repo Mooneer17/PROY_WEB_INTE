@@ -11,8 +11,34 @@
     <div id="layoutPanel">
         <div th:replace="layouts/fragmentos :: menuIzquierdo"></div>
         <div id="layoutContenido" >
-            <div class="container">
-                <h1>Categorias</h1>
+            <div class="container mt-3">
+                <div class="card">
+                    <div class="card-header">
+                      REGISTAR CATEGORIXAS
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Nombre de la categoriaa</label>
+                            <input type="text" class="form-control" placeholder="Ingrese nombre"/>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Descipsicon de la categoriaa</label>
+                            <input type="text" class="form-control" placeholder="Ingrese desciposi"/>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            
+                            <button class="btn btn-dark">
+                                <i class="fa-solid fa-floppy-disk"></i> Guardar categoria
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                </div>
 
             </div>
             <footer th:replace="layouts/fragmentos :: footer">
