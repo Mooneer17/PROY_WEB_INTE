@@ -17,25 +17,27 @@
                       REGISTAR CATEGORIXAS
                     </div>
                     <div class="card-body">
-                      <div class="row">
+                        <form th:acion="@{/categoria/Guardar}" th:object="${categoria}" method="post">                      
+                            <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Nombre de la categoriaa</label>
-                            <input type="text" class="form-control" placeholder="Ingrese nombre"/>
+                            <input th:field="*{nombre}" type="text" class="form-control" placeholder="Ingrese nombre"/>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Descipsicon de la categoriaa</label>
-                            <input type="text" class="form-control" placeholder="Ingrese desciposi"/>
+                            <input th:field="*{descripcion}" type="text" class="form-control" placeholder="Ingrese desciposi"/>
                       </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 text-center">
                             
-                            <button class="btn btn-dark">
+                            <button type="submit" class="btn btn-dark">
                                 <i class="fa-solid fa-floppy-disk"></i> Guardar categoria
                             </button>
                         </div>
                     </div>
+                </form>
 
                     
                 </div>
